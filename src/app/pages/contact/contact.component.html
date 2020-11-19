@@ -1,0 +1,291 @@
+<!-- ======= Contact Section ======= -->
+<section id="contact" class="contact">
+    <div class="container">
+
+        <div class="section-title">
+            <h2 class="text-center">Contact</h2>
+            <p class="text-center">ZKTeco Saudi Arabia شركة تقدم العالمية</p>
+        </div>
+
+        <div class="row" data-aos="fade-up">
+            <div class="col-lg-6">
+                <div class="info-box mb-4">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Our Address</h3>
+                    <p>الادارة العامة الرياض العليا خلف بنك سامبا برج الهويشل ، مكتب رقم 205 ورقم 204 الدور 2 معرض الرياض في مخرج 12 مجمع السيف غاليري - السندي معرض جدة شارع خالد بن الوليد بجوار البنك الاهلي</p>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="info-box  mb-4">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email Us</h3>
+                    <p>Marketing@zkteco-sa.com</p>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="info-box  mb-4">
+                    <i class="fas fa-phone-square-alt"></i>
+                    <h3>Call Us</h3>
+                    <p>+966 596305506</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row" data-aos="fade-up">
+
+            <div class="col-lg-6 ">
+                <iframe class="mb-4 mb-lg-0" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621"
+                    frameborder="0" style="border:0; width: 100%; height: 384px;" allowfullscreen></iframe>
+            </div>
+
+            <div class="col-lg-6">
+                <form class="p-5 bg-form justify-content-center" name="form" #form="ngForm">
+
+                    <div class="row form-group">
+                        <div class="col-md-6 mb-3 mb-md-0">
+
+                            <input type="text" name="firstName" class="form-control" #firstName="ngModel" [(ngModel)]="message.firstName">
+                        </div>
+                        <div class="col-md-6">
+
+                            <input type="text" name="lasttName" #lastName="ngModel" class="form-control" autocomplete="off" placeholder="Last Name" [(ngModel)]="message.lastName">
+                        </div>
+                    </div>
+
+                    <div class="row form-group">
+
+                        <div class="col-md-12">
+
+                            <input type="email" class="form-control" autocomplete="off" placeholder=" Enter Your Email" id="email" [(ngModel)]="message.email" name="email" required>
+                        </div>
+                    </div>
+
+
+
+                    <div class="row form-group">
+                        <div class="col-md-12">
+
+                            <textarea name="message" cols="30" rows="7" class="form-control" placeholder="Enter Your Message" #message="ngModel" class="form-control" autocomplete="off" [(ngModel)]="message.message"></textarea>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="row form-group ">
+                            <div class="col-md-12" *ngIf="!ar" [ngStyle]="myStyles">
+                                <input type="submit" value="Send Message" class="btn btn-primary btn-md text-white" (click)="save()" [disabled]="isBusy">
+                            </div>
+
+                            <div class="col-md-12" *ngIf="ar" [ngStyle]="myStyles">
+                                <input type="submit" value="ارسل رسالتك " class="btn btn-primary btn-md text-white" (click)="save()" [disabled]="isBusy">
+                            </div>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+
+        </div>
+
+        <div class="row " data-aos="fade-up ">
+
+            <div class="col-lg-6 col-md-6 ">
+                <div class="info-box mb-4 ">
+                    <h3>ZKTeco Egypt
+                    </h3>
+                    <p> 15 Ahmed Al-Saman, Mostafa Al-Nahas, Naser City, Cairo, Egypt</p>
+
+                    <p> Phone: + 011 5952 2226</p>
+                    <p> Sales : rancho.su@zkteco.com</p>
+                </div>
+            </div>
+
+
+            <div class="col-lg-6 col-md-6 ">
+                <div class="info-box mb-4 ">
+                    <h3>ZKTeco Vietnam
+                    </h3>
+                    <p>4th floor, Dong Phuong Building, 666 Cach Mang Thang 8 Str, Dist Tan Binh, HCMC, Vietnam</p>
+                </div>
+            </div>
+
+
+            <div class="col-lg-6 col-md-6 ">
+                <div class="info-box mb-4 ">
+                    <h3>ZKTeco Philippines
+                    </h3>
+                    <p> Unit 12C-05 Victoria Tower, Timog Ave, Quezon City, Philippines</p>
+
+
+
+                </div>
+            </div>
+
+
+
+            <div class="col-lg-6 col-md-6 ">
+                <div class="info-box mb-4 ">
+                    <h3>ZKTeco Malaysia
+                    </h3>
+                    <p> G-21, Jalan Kenari 13C, Bandar Puchong Jaya 47170, Puchong, Selangor, Malaysia</p>
+                </div>
+            </div>
+
+
+
+
+
+
+            <div class="col-lg-6 col-md-6 ">
+                <div class="info-box mb-4 ">
+                    <h3>ZKTeco Indonesia
+                    </h3>
+                    <p> Jl. KH Agus salim Rt/Rw 02/08 No 182 Teluk angsan- Bekasi, Jawa Barat</p>
+
+                </div>
+            </div>
+
+
+
+
+
+            <div class="col-lg-6 col-md-6 ">
+                <div class="info-box mb-4 ">
+                    <h3>ZKTeco Mexico
+                    </h3>
+                    <p> 03.02.02 German Centre, Av. Santa Fe No. 170 Lomas Santa Fe, Alvaro Obregon 01210 Mexico Distrito Federal</p>
+
+
+
+                </div>
+            </div>
+
+
+
+
+
+            <div class="col-lg-6 col-md-6 ">
+                <div class="info-box mb-4 ">
+                    <h3>ZKTeco Turkey
+                    </h3>
+                    <p> Perper Trade Center Block B 2nd Floor No. 40 Sisli, Istanbul</p>
+
+
+
+                </div>
+            </div>
+
+
+
+
+
+
+            <div class="col-lg-6 col-md-6 ">
+                <div class="info-box mb-4 ">
+                    <h3>ZKTeco Brazil
+                    </h3>
+                    <p> R Hildebrando Thomaz de carvalho 117, Vila Mariana, Sao Paulo, Brazil. 04012-120</p>
+
+
+
+                </div>
+            </div>
+
+
+
+
+
+            <div class="col-lg-6 col-md-6 ">
+                <div class="info-box mb-4 ">
+                    <h3>ZK Hong Kong
+                    </h3>
+                    <p> Unit 1411, 14/F., Shing Yip Industrial Building,19-21 Shing Yip Street, Kwun Tong, Kowloon, Hong Kong</p>
+
+
+
+                </div>
+            </div>
+
+
+
+
+
+
+            <div class="col-lg-6 col-md-6 ">
+                <div class="info-box mb-4 ">
+                    <h3>ZKTeco South Africa
+                    </h3>
+                    <p> Unit 5, Block D, Wellness Corporate Park, Beethoven Street, Hartbeespoort, 0216, South Africa</p>
+
+
+
+                </div>
+            </div>
+
+
+
+
+
+            <div class="col-lg-6 col-md-6 ">
+                <div class="info-box mb-4 ">
+                    <h3>ZKTeco Europe
+                    </h3>
+                    <p> Av. Camino de lo Cortao 10 Nave 1 28703 S.S. de los Reyes, Madrid, Spain</p>
+
+
+
+                </div>
+            </div>
+
+
+
+
+
+            <div class="col-lg-6 col-md-6 ">
+                <div class="info-box mb-4 ">
+                    <h3>ZKTeco Argentina
+                    </h3>
+                    <p> La Pampa 1534 1st Floor A, CABA, Argentina</p>
+
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 ">
+                <div class="info-box mb-4 ">
+                    <h3>ZKTeco USA
+                    </h3>
+                    <p>201 Circle Drive North, Suite 116, Piscataway ,NJ 08854, U.S.A.</p>
+
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6 ">
+                <div class="info-box mb-4 ">
+                    <h3>ZKTeco China
+                    </h3>
+                    <p>ZK Building, Wuhe Road, Gangtou, Bantian, Buji Town,Longgang District, Shenzhen, China 518129</p>
+
+                </div>
+            </div>
+
+
+            <div class="col-lg-6 col-md-6 ">
+                <div class="info-box mb-4 ">
+                    <h3>ZKTeco Saudi Arabia
+                    </h3>
+                    <p> Buiding B, Second floor, Room No.204, Behind Samba Bank, Olaya Main Road, Olaya, Riyadh, Kingdom of Saudi Arabia</p>
+
+                    <p> Phone: +966 114667008 | +966 596305506</p>
+                    <p> Fax: +966 114667009</p>
+                    <p> Sales: marketing@zkteco-sa.com</p>
+                    <p> Website : www.zkteco-sa.com</p>
+
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+</section>
+<!-- End Contact Section -->

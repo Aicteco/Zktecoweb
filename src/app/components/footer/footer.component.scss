@@ -1,0 +1,38 @@
+ul {
+    list-style: none;
+}
+
+h2 {
+    font-family: NoirStd;
+    color: #7ac143;
+    ;
+}
+
+p {
+    font-family: NoirDtd;
+    color: #474b4f;
+}
+
+.links {
+    font-family: NoirStd;
+    color: #474b4f;
+    text-align: center;
+}
+
+.foo {
+    font-family: NoirStd;
+    color: #474b4f !important;
+}
+
+.btn:not(:disabled):not(.disabled) {
+    cursor: pointer;
+    margin-right: 7px;
+}
+
+.links {
+    color: #474b4f !important;
+}
+
+.copyright {
+    color: #474b4f !important;
+}

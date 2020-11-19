@@ -1,0 +1,133 @@
+<!------------ Footer -------------------->
+
+<footer class="footer">
+    <div class="container text-center">
+        <div class="row ">
+            <div class="col-md-12">
+                <div class="row ">
+                    <div class="col-md-3 text-center">
+                        <h2 *ngIf="!ar" [ngStyle]="myStyles" class="footer-heading mb-4">About Us</h2>
+                        <h2 *ngIf="ar" [ngStyle]="myStyles" class="footer-heading mb-4">معلومات عنا </h2>
+
+                        <ul *ngIf="!ar" [ngStyle]="myStyles">
+                            <li> <a class="links" [ngStyle]="myStyles"> Company</a></li>
+                            <li> <a class="links" [ngStyle]="myStyles"> ABOUT US</a></li>
+
+
+                        </ul>
+
+                        <ul *ngIf="ar" [ngStyle]="myStyles">
+                            <li> <a class="links" [ngStyle]="myStyles"> من نحن  </a></li>
+                            <li> <a class="links" [ngStyle]="myStyles">  اتصل بنا</a></li>
+
+                        </ul>
+                    </div>
+
+                    <div class=" col-xl-3 col-lg-3  col-md-3  col-sm-3  text-lg-center ">
+                        <div class="ft-contact">
+
+                            <h2 class="footer-heading mb-4" *ngIf="!ar" [ngStyle]="myStyles"> Products </h2>
+                            <h2 class="footer-heading mb-4" *ngIf="ar" [ngStyle]="myStyles"> المنتجات </h2>
+
+
+                            <ul *ngIf="!ar" [ngStyle]="myStyles">
+                                <li> <a class="links" [ngStyle]="myStyles"> Premium Product Line</a></li>
+                                <li> <a class="links" [ngStyle]="myStyles"> Time Attendance</a></li>
+                                <li> <a class="links" [ngStyle]="myStyles"> Access Control</a></li>
+                                <li> <a class="links" [ngStyle]="myStyles"> Entrance Control</a></li>
+                                <li> <a class="links" [ngStyle]="myStyles"> Video Surveillance</a></li>
+                                <li> <a class="links" [ngStyle]="myStyles"> Smart Lock </a></li>
+                                <li> <a class="links" [ngStyle]="myStyles"> Bio Module </a></li>
+
+
+                            </ul>
+
+                            <ul *ngIf="ar" [ngStyle]="myStyles">
+                                <li> <a class="links" [ngStyle]="myStyles">  خط الانتاج الاستثنائي </a></li>
+                                <li> <a class="links" [ngStyle]="myStyles"> الحضور والانصراف</a></li>
+                                <li> <a class="links" [ngStyle]="myStyles"> التحكم في الدخول</a></li>
+                                <li> <a class="links" [ngStyle]="myStyles"> مراقبة البوابة والمدخل</a></li>
+                                <li> <a class="links" [ngStyle]="myStyles"> المراقبة بالفيديو</a></li>
+                                <li> <a class="links" [ngStyle]="myStyles">  الاقفال الذكية</a></li>
+
+
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class=" col-xl-3 col-lg-3  col-md-3  col-sm-3  text-lg-center ">
+                        <div class="ft-contact">
+
+                            <h2 class="footer-heading mb-4" *ngIf="!ar" [ngStyle]="myStyles"> Download </h2>
+                            <h2 class="footer-heading mb-4" *ngIf="ar" [ngStyle]="myStyles"> تحميل </h2>
+
+
+                            <ul *ngIf="!ar" [ngStyle]="myStyles">
+                                <li> <a class="links" [ngStyle]="myStyles"> Software  </a></li>
+                                <li> <a class="links" [ngStyle]="myStyles"> Data Sheet</a></li>
+                                <li> <a class="links" [ngStyle]="myStyles"> User Manual </a></li>
+                                <li> <a class="links" [ngStyle]="myStyles"> Installation Guide </a></li>
+                                <li> <a class="links" [ngStyle]="myStyles"> Video Surveillance</a></li>
+                                <li> <a class="links" [ngStyle]="myStyles"> Quick Start Guide  </a></li>
+
+
+                            </ul>
+
+                            <ul *ngIf="ar" [ngStyle]="myStyles">
+                                <li> <a class="links" [ngStyle]="myStyles">  البرمجيات </a></li>
+                                <li> <a class="links" [ngStyle]="myStyles">  ورقة البيانات</a></li>
+                                <li> <a class="links" [ngStyle]="myStyles"> دليل المستخدم</a></li>
+                                <li> <a class="links" [ngStyle]="myStyles"> دليل التركيب</a></li>
+                                <li> <a class="links" [ngStyle]="myStyles">  دليل البدء السريع</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class=" col-xl-3 col-lg-3  col-md-3  col-sm-3  text-lg-center ">
+                        <div class="ft-contact">
+
+                            <h2 class="footer-heading mb-4" *ngIf="!ar" [ngStyle]="myStyles"> Press </h2>
+                            <h2 class="footer-heading mb-4" *ngIf="ar" [ngStyle]="myStyles"> صحافة </h2>
+
+
+                            <ul *ngIf="!ar" [ngStyle]="myStyles">
+                                <li> <a class="links" [ngStyle]="myStyles"> News  </a></li>
+                                <li> <a class="links" [ngStyle]="myStyles"> Events </a></li>
+                                <li> <a class="links" [ngStyle]="myStyles"> Newsletter  </a></li>
+
+
+
+                            </ul>
+
+                            <ul *ngIf="ar" [ngStyle]="myStyles">
+                                <li> <a class="links" [ngStyle]="myStyles">  أخبار </a></li>
+                                <li> <a class="links" [ngStyle]="myStyles">  أحداث </a></li>
+                                <li> <a class="links" [ngStyle]="myStyles"> النشرة الإخبارية </a></li>
+
+
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <hr>
+        <div class="row align-items-center justify-content-md-between">
+            <div class="col-lg-12 text-lg-center">
+                <div class="copyright" *ngIf="!ar" [ngStyle]="myStyles">
+                    &copy; {{test | date: 'yyyy'}} Copyright &copy; All rights reserved | This template is made with by ZKTeco
+
+                </div>
+
+                <div class="copyright" *ngIf="ar" [ngStyle]="myStyles">
+                    &copy; {{test | date: 'yyyy'}} حقوق النشر &copy; جميع الحقوق محفوظة | يرصد هذا الموقع بواسطة ZKTeco
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</footer>

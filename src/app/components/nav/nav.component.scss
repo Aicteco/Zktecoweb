@@ -1,0 +1,55 @@
+nav {
+    float: right;
+    position: fixed;
+    top: 32%;
+    direction: rtl !important;
+    margin-right: -37px;
+    background: transparent;
+    z-index: 9999;
+    color: #474b4f;
+}
+
+nav ul {
+    text-align: center;
+    list-style: none;
+}
+
+nav ul li {
+    position: relative;
+    width: 45px;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.726);
+    text-transform: uppercase;
+    transition: all .4s ease-out;
+}
+
+nav ul li:after {
+    position: absolute;
+    background: white;
+    color: #474b4f;
+    top: 0;
+    left: 70px;
+    width: 70px;
+    height: 100%;
+    opacity: .5;
+    transform: perspective(400px) rotateY(90deg);
+    transform-origin: 0 100%;
+    transition: all .4s ease-out;
+}
+
+nav ul li:hover:after {
+    opacity: 1;
+    transform: perspective(400px) rotateY(0deg) scale(1);
+    transition: 0.4s;
+}
+
+nav ul li>div {
+    display: inline-block;
+    padding: 15px 0;
+    border-bottom: 1px solid #474b4f;
+    background: transparent;
+}
+
+nav ul li div {
+    position: relative;
+}

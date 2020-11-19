@@ -1,0 +1,244 @@
+<div class="site-wrap">
+    <!----------------- top navbar -------------------------->
+    <div class="top-bar py-2 bg-dark">
+        <div class="container-fluid text-center">
+            <div class="row">
+                <!---------------- data address ---------->
+                <div class="col-xl-6 col-lg-6 col-md-6  col-sm-6 ">
+                    <p class="mb-0">
+                        <span class="mr-4">
+                            <strong class="text-white"> 
+                     <i class="fas fa-phone-alt"></i></strong>
+                     <a [ngStyle]="myStyles"> +966114667008</a></span>
+
+                        <span class="mr-4">
+                        <strong class="text-white"> 
+                            <i class="fas fa-mobile-alt"></i>
+                        </strong>
+                 <a [ngStyle]="myStyles">+966 596305506 </a></span>
+
+
+
+                        <span class="mr-4"><strong class="text-white" > <i class="fa fa-envelope" ></i></strong>
+                           <a> Marketing@zkteco-sa.com</a></span>
+                    </p>
+
+
+                </div>
+                <!------------------- end data address ----------->
+                <div class="col-xl-6 col-lg-6 col-md-6 ">
+                    <div class="social-media text-center">
+                        <!----------------- dropdown ------------->
+                        <a>
+                            <a class="sl-nav">
+                                <ul>
+                                    <li> <i class="fa fa-globe" aria-hidden="true"> <a >Lang </a> </i>
+                                        <div class="triangle"></div>
+                                        <ul>
+                                            <li (click)="Arb()"> <i class="sl-flag flag-de"><div id="arabic"></div></i> <span class="active">Arabic</span></li>
+                                            <li (click)="English()"><i class="sl-flag flag-usa"><div id="english"></div></i> <span>English</span></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </a>
+                        </a>
+                        <!---------------------- language ------------------->
+                        <a class="language"> <i class="fas fa-grip-lines-vertical"></i> Arabic
+                        </a>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header class="site-navbar py-4 js-sticky-header site-navbar-target" role="banner">
+        <div class="container-fluid text-center">
+            <div class="row ">
+
+                <div class="col-xl-3 col-lg-3 col-md-3 ">
+                    <div class="mb-0 site-logo">
+                        <a [routerLink]="['pages/home']">
+                            <img class="ezicodeLogo" src="../../../assets/img/brand/logo.png">
+                        </a>
+                    </div>
+                    <div class="d-inline d-lg-none ml-md-0 mr-auto ">
+                        <a class="site-menu-toggle  text-black">
+                        </a>
+                        <i class="fa fa-bars fa-2x ICONS " (click)="open()" *ngIf="bar"></i>
+
+                    </div>
+                </div>
+
+                <div class=" col-md-8 d-none d-lg-block">
+                    <nav class="site-navigation position-relative" role="navigation">
+                        <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
+                            <li *ngIf="!ar">
+
+                                <a class="nav-link wow slideInUp" [ngStyle]="myStyles" [routerLinkActive]="['active']" [routerLink]="['/pages/home']">
+                                    Home
+                                </a>
+                            </li>
+
+                            <li *ngIf="ar">
+
+                                <a class="nav-link wow slideInUp" [ngStyle]="myStyles" [routerLinkActive]="['active']" [routerLink]="['/pages/home']">
+                                     الصفحة الرئيسية
+                                </a>
+                            </li>
+
+                            <li *ngIf="!ar">
+                                <a class="nav-link wow slideInUp" [ngStyle]="myStyles" [routerLinkActive]="['active']" [routerLink]="['/about']">
+
+                                    Products</a>
+                            </li>
+
+                            <li *ngIf="ar">
+                                <a class="nav-link wow slideInUp" [ngStyle]="myStyles" [routerLinkActive]="['active']" [routerLink]="['/about']">
+                                 معلومات عنا </a>
+                            </li>
+
+
+
+
+                            <li *ngIf="!ar">
+                                <a class="nav-link " [ngStyle]="myStyles" [routerLinkActive]="['active']" [routerLink]="['/whyezicodes']">
+                                    Services</a>
+                            </li>
+
+
+                            <li *ngIf="ar">
+                                <a class="nav-link   " [ngStyle]="myStyles" [routerLinkActive]="['active']" [routerLink]="['/whyezicodes']">
+                                    لماذا نحن ؟</a>
+                            </li>
+
+
+                            <li *ngIf="!ar">
+                                <a class="nav-link  wow slideInUp" [ngStyle]="myStyles" [routerLinkActive]="['active']" [routerLink]="['/eziservices/digitalsolutionsandinnovationsKeyservices']">
+                                    Press </a>
+                            </li>
+
+                            <li *ngIf="ar">
+                                <a class="nav-link  wow slideInUp" [ngStyle]="myStyles" [routerLinkActive]="['active']" [routerLink]="['/eziservices/digitalsolutionsandinnovationsKeyservices']">
+                                     الخدمات </a>
+                            </li>
+
+
+
+
+
+                            <li *ngIf="!ar">
+                                <a class="nav-link " [ngStyle]="myStyles" [routerLinkActive]="['active']" [routerLink]="['/contact']">
+                                   Supports
+                                </a>
+                            </li>
+
+                            <li *ngIf="ar">
+                                <a class="nav-link " [routerLinkActive]="['active']" [ngStyle]="myStyles" [routerLink]="['/contact']">
+                                   تواصل بنا
+                                </a>
+                            </li>
+
+                            <li *ngIf="!ar">
+                                <a class="nav-link " [ngStyle]="myStyles" [routerLinkActive]="['active']" [routerLink]="['/pages/aboutus']">
+                                 About us
+                              </a>
+                            </li>
+
+
+
+                            <li *ngIf="!ar">
+                                <a class="nav-link " [ngStyle]="myStyles" [routerLinkActive]="['active']" [routerLink]="['/pages/contact']">
+                              Contact Us
+                            </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+
+
+            </div>
+        </div>
+
+    </header>
+
+
+
+
+</div>
+
+
+<!-- Sidebar-->
+
+<div class="sidebar-container fixed-top" data-aos="fade-down-right" *ngIf="sidebar">
+    <div class="sidebar-logo text-right">
+        <i class="fa fa-window-close fa-2x" aria-hidden="true" (click)="close()"></i>
+
+    </div>
+    <ul class="sidebar-navigation">
+        <li *ngIf="!ar">
+            <a [routerLink]="['/pages/home']" [ngStyle]="myStyles">
+       Home
+      </a>
+        </li>
+        <li *ngIf="ar">
+            <a [routerLink]="['/home']" [ngStyle]="myStyles">
+        الصفحة الرئيسية
+      </a>
+        </li>
+        <li *ngIf="!ar">
+            <a [routerLink]="['/about']" [ngStyle]="myStyles">
+       About Us
+      </a>
+        </li>
+
+        <li *ngIf="ar">
+            <a [routerLink]="['/about']" [ngStyle]="myStyles">
+        معلومات عنا
+      </a>
+        </li>
+
+        <li *ngIf="!ar" class="header" [ngStyle]="myStyles">Ezi Codes Menu</li>
+        <li *ngIf="ar" class="header" [ngStyle]="myStyles">قائمة البيانات </li>
+
+
+
+        <li *ngIf="!ar">
+            <a [routerLink]="['/whyezicodes']" [ngStyle]="myStyles">
+         Why Ezi Codes
+      </a>
+        </li>
+        <li *ngIf="ar">
+            <a [routerLink]="['/whyezicodes']" [ngStyle]="myStyles">
+        لماذا نحن  
+      </a>
+        </li>
+
+        <li *ngIf="!ar">
+            <a [routerLink]="['/eziservices/digitalsolutionsandinnovationsKeyservices']" [ngStyle]="myStyles">
+         Services
+      </a>
+        </li>
+
+        <li *ngIf="ar">
+            <a [routerLink]="['/eziservices/digitalsolutionsandinnovationsKeyservices']" [ngStyle]="myStyles">
+        الخدمات
+      </a>
+        </li>
+        <li *ngIf="!ar">
+            <a [routerLink]="['/contact']" [ngStyle]="myStyles">
+       Contact
+      </a>
+        </li>
+
+
+        <li *ngIf="ar">
+            <a [routerLink]="['/contact']" [ngStyle]="myStyles">
+      تواصل بنا
+    </a>
+        </li>
+
+    </ul>
+</div>
